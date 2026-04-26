@@ -1,0 +1,55 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  # Exclude generated files from static analysis,
+  # since they are auto-generated and should not be linted.
+  exclude:
+    - "**.g.dart"
+    - "**.config.dart"
+
+linter:
+  rules:
+    # Removes unused parameters from constructors to avoid unnecessary clutter.
+    avoid_unused_constructor_parameters: true
+
+    # Prevents explicitly specifying default argument values (cleaner code).
+    avoid_redundant_argument_values: true
+
+    # Forces constructors to be placed before other members for better readability.
+    sort_constructors_first: true
+
+    # Allows uppercase identifiers for constants (disable enforcement).
+    constant_identifier_names: false
+
+    # Disables lints where child classes override fields intentionally.
+    overridden_fields: false
+
+    # Prevents using runtime type-to-string conversions (fragile and slow).
+    avoid_type_to_string: true
+
+    # Ensures proper closing of streams and sinks to prevent memory leaks.
+    close_sinks: true
+
+    # Forces using `package:` imports instead of relative imports for maintainability.
+    always_use_package_imports: true
+
+    # Enforces trailing commas in multiline constructors for clean diffs & auto-formatting.
+    require_trailing_commas: true
+
+    # Warns if build context is used after async gaps (avoids exceptions).
+    use_build_context_synchronously: false
+
+    # Encourages using const constructors whenever possible.
+    prefer_const_constructors: true
+
+    # Encourages immutable classes to also use const constructors.
+    prefer_const_constructors_in_immutables: true
+
+    # Encourages using const for constant variable declarations.
+    prefer_const_declarations: true
+
+    # Detects unnecessary use of `const` keyword.
+    unnecessary_const: true
+
+    # Encourages using const collections for immutability and performance.
+    prefer_const_literals_to_create_immutables: true
