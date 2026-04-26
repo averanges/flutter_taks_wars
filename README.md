@@ -586,6 +586,4 @@ You can:
 - mark task as urgent
 
 Saving and deleting use `TaskBloc`;  
-in case of errors, dialogs with messages are shown.#   f l u t t e r _ t a k s _ w a r s 
- 
- # flutter_taks_wars
+in case of errors, dialogs with messages are shown.
