@@ -4,6 +4,7 @@ A mobile task management application developed according to a Figma design.
 
 The project is built using **Clean Architecture**, with separation into `presentation / domain / data`, dependency injection via `get_it` + `injectable`, and **BLoC-based state management**.
 
+
 ---
 
 ## Contents
@@ -585,5 +586,6 @@ You can:
 - mark task as urgent
 
 Saving and deleting use `TaskBloc`;  
-in case of errors, dialogs with messages are shown.#   f l u t t e r _ t a k s _ w a r s  
+in case of errors, dialogs with messages are shown.#   f l u t t e r _ t a k s _ w a r s 
+ 
  # flutter_taks_wars
